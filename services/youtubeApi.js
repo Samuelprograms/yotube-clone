@@ -1,0 +1,1 @@
+const URL = `https://youtube.googleapis.com/youtube/v3/search?part=snippet&key=${process.env.API_KEY}`
