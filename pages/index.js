@@ -24,7 +24,7 @@ const Index = () => {
         {isSearching ? (
           <Loader />
         ) : (
-          videos?.map((video) => <Video video={video} />)
+          videos?.map((video,index) => <Video key={index} video={video} />)
         )}
       </main>
     </Layout>

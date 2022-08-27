@@ -38,8 +38,8 @@ const NavBar = () => {
       </div>
       {showSubNavbar && (
         <div className="absolute bg-neutral-900 z-20 w-full p-10 grid place-items-center sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-          {categories?.map(({ snippet: { title } }) => (
-            <p className="font-bold cursor-pointer text-neutral-400 hover:text-white">
+          {categories?.map(({ snippet: { title } },index) => (
+            <p key={index} className="font-bold cursor-pointer text-neutral-400 hover:text-white">
               {title}
             </p>
           ))}

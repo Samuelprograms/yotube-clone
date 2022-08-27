@@ -7,6 +7,7 @@ const Video = ({ video }) => {
   return (
     <div className="space-y-3 max-w-md hover:scale-105 transition-all cursor-pointer min-w-full">
       <Image
+        alt="thumbnail"
         src={info.thumbnails.default.url}
         width={150}
         height={90}
@@ -14,6 +15,7 @@ const Video = ({ video }) => {
       />
       <div className="flex items-center space-x-2">
         <Image
+          alt="channelPhoto"
           src={info.thumbnails.default.url}
           width={50}
           height={50}
